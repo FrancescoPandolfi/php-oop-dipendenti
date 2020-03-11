@@ -15,12 +15,22 @@
       $this->ruolo = $ruolo;
     }
 
-    public function getBasicInfo() {
+    public function getBasicInfo() 
+    {
       return
       "Id dipendente: " . $this->id_dipendente . PHP_EOL .
       "Matricola: " . $this->matricola . PHP_EOL .
       "Id dipendente: " . $this->ruolo . PHP_EOL;
     }
 
+    public function setContract($tipo_di_contratto) 
+    {
+      $this->tipo_di_contratto = $tipo_di_contratto;
+    }
+
+    public function getContract()
+    {
+      return $this->tipo_di_contratto;
+    }
 
   }
